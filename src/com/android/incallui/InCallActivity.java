@@ -64,6 +64,7 @@ public class InCallActivity extends Activity {
         // Have the WindowManager filter out touch events that are "too fat".
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED
                 | WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON
+                | WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD
                 | WindowManager.LayoutParams.FLAG_IGNORE_CHEEK_PRESSES);
 
         requestWindowFeature(Window.FEATURE_NO_TITLE);
